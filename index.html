@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full ">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Timer</title>
+</head>
+
+<body class="bg-[#01131E] h-full pt-36 text-[22px]">
+    <div class="container bg-[#011C2C] rounded-t w-[431px] m-auto px-[22px]">
+        <h2 class="text-white text-center pt-[20px] mb-[32px]">TIMER</h2>
+        <div class="blocks text-white flex justify-between mb-3">
+
+            <input type="number" placeholder="00" inputmode="numeric" class="input hours [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none placeholder:text-white  input-bordered focus:border-white border border-white rounded px-[27px] text-[45px] w-[109px] bg-[#011C2C] h-[59px] text-right"
+            />
+            <input type="number" placeholder="00" inputmode="numeric" class="input minutes [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none placeholder:text-white  input-bordered focus:border-white border border-white rounded px-[27px] text-[45px] w-[109px] bg-[#011C2C] h-[59px] text-right"
+            />
+            <input type="number" placeholder="00" inputmode="numeric" class="input seconds [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none placeholder:text-white  input-bordered focus:border-white  border border-white rounded px-[27px] text-[45px] w-[109px] bg-[#011C2C] h-[59px] text-right"
+            />
+
+        </div>
+        <div class="blocks-title text-white flex justify-between pl-4 pr-2 mb-11">
+            <h3 class="hours">Hours</h3>
+            <h3 class="minutes">Minutes</h3>
+            <h3 class="seconds">Seconds</h3>
+        </div>
+        <div class="btns flex gap-[15px] pb-[52px]">
+            <button class="btn start-btn btn-success bg-[#03AE85] text-white border-none w-[118px]">START</button>
+            <button class="btn pause-btn bg-transparent hover:bg-[#01242c45] text-white w-[118px]"><span class="pause">PAUSE</span><span class="continue hidden">CONTINUE</span></button>
+            <button class="btn reset-btn btn-error bg-[#FD6259] text-white border-none w-[118px]">RESET</button>
+
+        </div>
+    </div>
+    <div class="line w-[431px] h-2 bg-[#FD6259] m-auto rounded-b"></div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
+
+</html>
